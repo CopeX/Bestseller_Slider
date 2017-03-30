@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<widgets>
+    <bestseller type="bestseller/bestseller" translate="" module="bestseller">
+        <name>Top Seller</name>
+        <description type="desc">Widget to Top Sellers</description>
+        <parameters>
+            <infinite>
+                <label>Infinite</label>
+                <description>Scroll infinite through the products</description>
+                <visible>1</visible>
+                <required>1</required>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+            </infinite>
+            <autoplay>
+                <label>Autoplay</label>
+                <visible>1</visible>
+                <description>Auto scroll through products</description>
+                <type>select</type>
+                <required>1</required>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+            </autoplay>
+            <autotime>
+                <label>Autoplay Time</label>
+                <visible>1</visible>
+                <required>1</required>
+                <description>Autoplay time to scroll through products text in miliseconds (1000 = 1 second)</description>
+                <type>text</type>
+                <value>2000</value>
+            </autotime>
+            <dots>
+                <label>Dots</label>
+                <visible>1</visible>
+                <required>1</required>
+                <description>Show page dots under the slider</description>
+                <type>select</type>
+                <source_model>adminhtml/system_config_source_yesno</source_model>
+            </dots>
+        </parameters>
+    </bestseller>
+</widgets>

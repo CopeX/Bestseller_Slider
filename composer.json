@@ -1,0 +1,23 @@
+{
+  "name": "copex/bestseller_slider",
+  "license": "GPL3",
+  "type": "magento-module",
+  "description": "Bestseller Slider Widget",
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "require-dev": {
+  },
+  "authors": [
+    {
+      "name": "Stephan Kast",
+      "email": "stephan.kast@copex.io",
+      "role": "Developer"
+    },
+    {
+      "name": "Roman Hutterer",
+      "email": "office@copex.io",
+      "role": "Developer"
+    }
+  ]
+}

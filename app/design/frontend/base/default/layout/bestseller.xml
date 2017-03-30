@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>js/slick/slick.js</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/slick/slick.css</name>
+            </action>
+
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/slick/slick-theme.css</name>
+            </action>
+
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>css/slick/custom.css</name>
+            </action>
+        </reference>
+    </default>
+</layout>
