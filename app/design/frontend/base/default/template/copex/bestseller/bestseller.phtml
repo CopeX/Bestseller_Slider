@@ -22,7 +22,7 @@ $dots = $this->getDots();
                            title="<?php echo $product->getName(); ?>">
                             <?php
                             try {
-                                echo $this->helper('catalog/image')->init($product)->resize(150, 84);
+                                echo $this->helper('catalog/image')->init($product)->resize(150, 150);
                             } catch (Exception $exception) {
 
                             }
@@ -31,6 +31,7 @@ $dots = $this->getDots();
                     </div>
                     <a href="<?php echo $product->getProductUrl(); ?>"
                        title="<?php echo $product->getName(); ?>"><?php echo $product->getName(); ?> </a>
+
                 </div>
                 <div class="price_sign">
                     <?php echo $this->getPriceHtml($product); ?>
@@ -46,10 +47,42 @@ $dots = $this->getDots();
             infinite: <?php echo $infinite; ?>,
             slidesToShow: 4,
             slidesToScroll: 4,
+            speed: 700,
             autoplay: <?php echo $autoplay; ?>,
             autoplaySpeed: <?php echo $autotime;?>,
-            variableWidth: true,
-            dots: <?php echo $dots;?>
+            dots: <?php echo $dots;?>,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        arrows: false,
+                        autoplay: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        autoplay: true
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
     });
 </script>

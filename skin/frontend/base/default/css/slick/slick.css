@@ -39,7 +39,7 @@
   text-transform: uppercase;
   line-height: 16px;
   margin: 10px;
-  width: 200px;
+  width: 100%;
   position: relative;
   text-align: center; }
   .slick-slider div.topinfo .prodimage {
@@ -92,7 +92,6 @@
   font-size: 20px; }
 
 .top_sellers {
-  width: 1000px;
   margin: 0 auto;
   background: white; }
 
@@ -100,6 +99,6 @@
   margin-left: 80px; }
 
 .price_sign {
-  margin-left: 30px; }
+  margin-left: 40px; }
 
 /*# sourceMappingURL=slick.css.map */
